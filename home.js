@@ -30,62 +30,80 @@ const app = {
     songs: [{
             name: 'Bài Này Chill Phết',
             singer: 'Đen ft Min',
-            image: './source/bai_nay_chill_phết.jpg',
+            image: './source/avatar_2.jpg',
             path: './source/Đen ft. MIN - Bài Này Chill Phết (M-V).mp3'
         },
         {
             name: 'Hai Triệu Năm',
             singer: 'Đen ft Biên',
-            image: './source/2_Triệu_nam.jpg',
+            image: './source/avatar.jpg',
             path: './source/Đen - hai triệu năm ft. Biên (m-v).mp3'
         },
         {
             name: 'Bật Tình Yêu Lên',
             singer: 'Hòa Minzy ft Tăng Duy Tân',
-            image: './source/bat_tinh_yeu_len.jpg',
+            image: './source/avatar_2.jpg',
             path: './source/BatTinhYeuLen-TangDuyTanHoaMinzy-8715666.mp3'
         },
         {
             name: 'Waiting For You',
             singer: 'Mono',
-            image: './source/waiting_for_you.jpg',
+            image: './source/avatar.jpg',
             path: './source/WaitingForYou-MONOOnionn-7733882.mp3'
         },
         {
             name: 'Hãy Trao Cho Anh',
             singer: 'Sơn Tùng MTP',
-            image: './source/Hay_trao_cho-anh.jpg',
+            image: './source/avatar_2.jpg',
             path: './source/HayTraoChoAnh-SonTungMTPSnoopDogg-6010660.mp3'
         },
         {
             name: 'Không Phải Dạng Vừa Đâu',
             singer: 'Sơn Tùng MTP',
-            image: './source/khong_dạng_phải_vua_dau.jpg',
+            image: './source/avatar.jpg',
             path: './source/Khong-Phai-Dang-Vua-Dau-Son-Tung-M-TP.mp3'
         },
         {
             name: 'Sóng Gió',
             singer: 'Jack Ft K-ICM',
-            image: './source/sóng_gio.jpg',
+            image: './source/avatar_2.jpg',
             path: './source/SÓNG GIÓ - K-ICM x JACK - OFFICIAL MUSIC VIDEO.mp3'
         },
         {
             name: 'Em Gì Ơi',
             singer: 'Jack Ft K-ICM',
-            image: './source/em_gì_ơi.jpg',
+            image: './source/avatar.jpg',
             path: './source/Jack - Em Gì Ơi - Official Lyric Video.mp3'
         }, {
 
             name: 'Nàng Thơ',
             singer: 'Hoàng Dũng',
-            image: './source/nang_tho.jpg',
+            image: './source/avatar_2.jpg',
             path: './source/NangTho-HoangDung-6413381.mp3'
         },
         {
             name: 'Unstoppable',
             singer: 'Sia',
-            image: './source/Unstoppable.jpg',
+            image: './source/avatar.jpg',
             path: './source/Unstoppable - Sia (Lyrics + Vietsub) ♫.mp3'
+        }, {
+
+            name: 'Suýt Nữa Thì',
+            singer: 'Andiez',
+            image: './source/avatar_2.jpg',
+            path: './source/Suyt-Nua-Thi-Chuyen-Di-Cua-Thanh-Xuan-OST-Andiez.mp3'
+        }, {
+
+            name: 'Ngày Mai Em Đi Mất',
+            singer: 'Khải Đăng FT Đạt G',
+            image: './source/avatar.jpg',
+            path: './source/NgayMaiEmDiMat-KhaiDangDatG-7747861.mp3'
+        }, {
+
+            name: 'Ngày Mai Người Ta Lấy Chồng',
+            singer: 'Thành Đạt',
+            image: './source/avatar_2.jpg',
+            path: './source/NgayMaiNguoiTaDiLayChongCover-DicksonNguyen-9541472.mp3'
         }
     ],
 
@@ -180,8 +198,8 @@ const app = {
                 _this.prev();
             }
             audio.play()
+            _this.render();
             _this.scrollToActiveSong();
-            _this.scrollToActiveSong;
         }
         randomBtn.onclick = function () {
             _this.isRandom = !_this.isRandom;
